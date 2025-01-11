@@ -1,4 +1,4 @@
-# Mi Portfolio
+# My Portfolio
 
 Welcome to my portfolio. In this repository you will find some of the projects I have developed using **HTML**, **CSS** y **JavaScript**.
 
