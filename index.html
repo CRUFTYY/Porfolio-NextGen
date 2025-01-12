@@ -9,6 +9,7 @@
   <meta name="keywords" content="Elías Mateo, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
+  
 </head>
 <body>
 
@@ -30,7 +31,7 @@
             <img src="assets/img/logo.png" alt="Elías Mateo">
             <p>Elías Mateo</p>
           </a>
-          <button class="header--cta cta">Hire Us</button>
+          <button class="header--cta cta">HIRE ME</button>
           <div class="header--nav-toggle">
             <span></span>
           </div>
@@ -41,7 +42,7 @@
             <li><span>Works</span></li>
             <li><span>About</span></li>
             <li><span>Contact</span></li>
-            <li><span>Hire us</span></li>
+            <li><span>Hire Me</span></li>
           </ul>
         </nav>
         <ul class="l-main-content main-content">
@@ -49,7 +50,7 @@
             <div class="intro">
               <div class="intro--banner">
                 <h1>Elías Mateo,<br>Front-End<br>Developer<br></h1>
-                <button class="cta">Hire Us
+                <button class="cta">HIRE ME
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                     <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
@@ -174,37 +175,54 @@
             <div class="hire">
               <h2>You want me to do...</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form
-  class="work-request"
-  action="https://formspree.io/f/xbllqvgj"
-  method="POST"
-  novalidate
->
-  <div class="work-request--options">
-    <span class="options-a">
-      <input id="opt-1" type="checkbox" value="app design" name="app_design">
-      <label for="opt-1">Landing Page</label>
-      <input id="opt-2" type="checkbox" value="graphic design" name="graphic_design">
-      <label for="opt-2">Static Site</label>
-    </span>
-    <span class="options-b">
-      <input id="opt-6" type="checkbox" value="marketing" name="marketing">
-      <label for="opt-6">Marketing Page</label>
-    </span>
-  </div>
-  <div class="work-request--information">
-    <div class="information-name">
-      <input id="name" type="text" name="name" required spellcheck="false">
-      <label for="name">Name</label>
-    </div>
-    <div class="information-email">
-      <input id="email" type="email" name="email" required spellcheck="false">
-      <label for="email">Email</label>
-    </div>
-  </div>
-  <p class="error-message" style="display:none; color: red;"></p>
-  <input type="submit" value="Send Request">
-</form>
+              <form class="work-request" action="https://formspree.io/f/xbllqvgj" method="POST" novalidate>
+                <!-- Opciones del formulario -->
+                <div class="work-request--options">
+                  <span class="options-a">
+                    <input id="opt-1" type="checkbox" value="app design" name="app_design">
+                    <label for="opt-1">Landing Page</label>
+                    <input id="opt-2" type="checkbox" value="graphic design" name="graphic_design">
+                    <label for="opt-2">Static Site</label>
+                  </span>
+                  <span class="options-b">
+                    <input id="opt-6" type="checkbox" value="marketing" name="marketing">
+                    <label for="opt-6">Marketing Page</label>
+                  </span>
+                </div>
+                
+                <!-- Información de contacto -->
+                <div class="information-nombre">
+                  <input id="nombre" type="text" required name="nombre">
+                  <label for="nombre">Nombre</label>
+                </div>
+                
+                <div class="information-edad">
+                  <input id="edad" type="number" required name="edad">
+                  <label for="edad">Edad</label>
+                </div>
+                
+                <div class="information-celular">
+                  <input id="celular" type="tel" required name="celular">
+                  <label for="celular">Celular</label>
+                </div>
+                
+                <div class="information-email">
+                  <input id="email" type="email" required name="email">
+                  <label for="email">Email</label>
+                </div>
+                
+                <div class="information-mensaje">
+                  <textarea id="mensaje" required name="mensaje"></textarea>
+                  <label for="mensaje">Mensaje</label>
+                </div>
+                
+            
+                <!-- Mensaje de error (se mostrará si los campos no se completan correctamente) -->
+                <div class="error-message" style="display: none; color: red; margin-top: 10px;"></div>
+                
+                <!-- Botón de envío -->
+                <input type="submit" value="Send Request">
+              </form>
 
 <script>
   document.querySelector(".work-request").addEventListener("submit", function (e) {
@@ -234,16 +252,6 @@
   });
 </script>
 
-<style>
-  input.invalid {
-    border-color: red;
-    outline: none;
-  }
-  .error-message {
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-  }
-</style>
 
             </div>
           </li>
@@ -259,7 +267,6 @@
     <li>Hire me</li>
   </ul>
 </div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
