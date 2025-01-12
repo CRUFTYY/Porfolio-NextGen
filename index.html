@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Elías Mateo</title>
+  <title>Elías Mateo.</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="Elías Mateo, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
+  <meta name="description" content="Elias Mateo">
+  <meta name="keywords" content="Elías Mateo, html, sass, jquery">
+  <meta name="author" content="Elias Mateo">
   <link rel="stylesheet" href="assets/css/main.css">
   
 </head>
@@ -128,7 +128,7 @@
           <li class="l-section section">
             <div class="about">
               <div class="about--banner">
-                <h2>Proyectos<br>Informáticos<br>De calidad<br></h2>
+                <h2>Quality<br>Minimalist<br>Take care of your pocket<br></h2>
                 <a href="https://github.com/CRUFTYY" target="_blank">Github 
                   <span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
@@ -179,50 +179,111 @@
                 <!-- Opciones del formulario -->
                 <div class="work-request--options">
                   <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design" name="app_design">
-                    <label for="opt-1">Landing Page</label>
-                    <input id="opt-2" type="checkbox" value="graphic design" name="graphic_design">
-                    <label for="opt-2">Static Site</label>
+                    <input id="opt-1" type="checkbox" value="app design" name="service[]">
+                    <label for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Landing Page
+                    </label>
+                    <input id="opt-2" type="checkbox" value="graphic design" name="service[]">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Static site
+                    </label>
                   </span>
                   <span class="options-b">
-                    <input id="opt-6" type="checkbox" value="marketing" name="marketing">
-                    <label for="opt-6">Marketing Page</label>
+                    <input id="opt-6" type="checkbox" value="marketing" name="service[]">
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Marketing Page
+                    </label>
                   </span>
                 </div>
                 
                 <!-- Información de contacto -->
-                <div class="information-nombre">
-                  <input id="nombre" type="text" required name="nombre">
-                  <label for="nombre">Nombre</label>
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false" required name="name">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false" required name="email">
+                    <label for="email">Email</label>
+                  </div>
+                  <!-- <div class="information-message">
+                    <textarea id="message" name="message" spellcheck="false" required></textarea>
+                    <label for="message">Message</label>
+                  </div>    -->
+                  <style>
+                    
+                    .information-message {
+                  position: relative;
+                  width: -30%;
+                  height: -80%;
+                  margin-bottom: -120px;
+                   }
+
+                  .information-message textarea {
+                  width: 80%;
+                  min-height: 100px;
+                  padding: 20px 10;
+                  background-color: transparent;
+                  border: none;
+                  border-bottom: 1px solid #fff;
+                  border-radius: 0;
+                  color: #fff;
+                  font-size: 16px;
+                  font-family: "Montserrat", sans-serif;
+                  resize: vertical;
+                  position: relative;
+                  top: -10%; /* Moves the textarea 10% above */
+                  }
+
+                  .information-message textarea:focus {
+                  outline: none;
+                  background-color: #0c0c0c;
+                  }
+
+                .information-message label {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    pointer-events: none;
+                    font-size: 40px;
+                    font-weight: 100;
+                    color: #fff;
+                    transition: top .2s ease-in-out, font-size .2s ease-in-out;
+                }
+
+                .information-message textarea:focus + label,
+                .information-message textarea:not(:placeholder-shown) + label {
+                    top: -25px;
+                    font-size: 14px;
+                }
+
+                    </style>           
                 </div>
                 
-                <div class="information-edad">
-                  <input id="edad" type="number" required name="edad">
-                  <label for="edad">Edad</label>
-                </div>
-                
-                <div class="information-celular">
-                  <input id="celular" type="tel" required name="celular">
-                  <label for="celular">Celular</label>
-                </div>
-                
-                <div class="information-email">
-                  <input id="email" type="email" required name="email">
-                  <label for="email">Email</label>
-                </div>
-                
-                <div class="information-mensaje">
-                  <textarea id="mensaje" required name="mensaje"></textarea>
-                  <label for="mensaje">Mensaje</label>
-                </div>
-                
-            
                 <!-- Mensaje de error (se mostrará si los campos no se completan correctamente) -->
-                <div class="error-message" style="display: none; color: red; margin-top: 10px;"></div>
+                <div class="error-message" style="display: none; color: red; margin-top: -23.5px;"></div>
                 
                 <!-- Botón de envío -->
                 <input type="submit" value="Send Request">
-              </form>
+                
 
 <script>
   document.querySelector(".work-request").addEventListener("submit", function (e) {
